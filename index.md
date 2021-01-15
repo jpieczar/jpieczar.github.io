@@ -4,6 +4,6 @@
 <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
-<h1>JonoPieczara</h1>
+<h1 class="text">JonoPieczara</h1>
 </body>
 </html>
