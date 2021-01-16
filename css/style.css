@@ -3,6 +3,27 @@ body {
 	background-color: black;
 }
 
+
+
+.main_top_bar {
+	position: absolute;
+	display: flex;
+	position: fixed;
+	background-color: black;
+	width: 100%;
+	height: 70px;
+	z-index: 1;
+}
+
+.div_box {
+	position: absolute;
+	display: flex;
+	background-color: black;
+	width: 70%;
+	height: 10%;
+	z-index:1;
+}
+
 .text {
-	color: green;
+	color: #34eb58;
 }
