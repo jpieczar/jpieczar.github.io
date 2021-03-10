@@ -1,13 +1,13 @@
 body {
-	background-color: whitesmoke;
+	background-color: black;
 	font-family: Courier, monospace;
-	/* background-image: linear-gradient(90deg, black, green, black); */
 }
 
 .main_top_bar {
 	margin: 12px;
 	position: fixed;
-	background-color: cadetblue;
+	/* background-color: cadetblue; */
+	background-image: linear-gradient(45deg, green, blue, navy);
 	width: 97%;
 	border: solid 3px navy;
 
@@ -19,12 +19,19 @@ body {
 	justify-content: center;
 }
 
+.border {
+	margin: 12px;
+	border: 10px solid;
+	background-color: gainsboro;
+	border-image-source: linear-gradient(90deg, blue, navy);
+  	border-image-slice: 1;
+}
+
 .div_box_child {
 	margin: 12px;
 	justify-content: centre;
 	background-color: gainsboro;
-	width: 50%;
-	border: solid 3px navy;
+	width: 97%;
 }
 
 .break {
@@ -36,6 +43,10 @@ body {
 	font-family: monospace;
 	margin: 5px;
 	color: lime;
+}
+
+.text {
+	color: white;
 }
 
 .logo {
