@@ -1,12 +1,13 @@
 body {
-	background-color: black;
 	font-family: Courier, monospace;
+
+	background: rgb(3, 3, 77);
+	background: linear-gradient(to right, rgb(3, 3, 77) 0%, rgb(3, 3, 77) 0%, black 100%);
 }
 
 .main_top_bar {
 	margin: 12px;
 	position: fixed;
-	/* background-color: cadetblue; */
 	background-image: linear-gradient(45deg, green, blue, navy);
 	width: 97%;
 	border: solid 3px navy;
@@ -15,40 +16,33 @@ body {
 }
 
 .div_box_parent {
-	display: flex;
-	justify-content: center;
-}
-
-.border {
-	margin: 12px;
-	border: 10px solid;
-	background-color: gainsboro;
-	border-image-source: linear-gradient(90deg, blue, navy);
-  	border-image-slice: 1;
+	border: solid 3px lime;
+	margin: 5px;
+	display: grid;
+  	grid-template-columns: 60% 40%;
 }
 
 .div_box_child {
-	margin: 12px;
-	justify-content: centre;
-	background-color: gainsboro;
-	width: 97%;
+	border: solid 3px lime;
+	margin: 5px;
+	padding: 5px;
 }
 
 .break {
-	height: 150px;
+	height: 45px;
 	width: 100%;
 }
 
 .link {
 	font-family: monospace;
-	margin: 5px;
+	font-size: 20px;
+	margin: 25px;
 	color: lime;
 }
 
-.text {
-	color: white;
+.link_2 {
+	font-family: monospace;
+	font-size: 17px;
+	margin: 25px;
+	color: lime;
 }
-
-.logo {
-    width: 100px;
-  }
