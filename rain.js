@@ -6,15 +6,12 @@ canvas.width = parent.offsetWidth;
 canvas.height = parent.offsetHeight;
 
 const alphaNum = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~`!@#$%^&*()-_=+?{}[];:,<.>";
-
-const alphabet = alphaNum;
-
 const fontSize = 16;
 const columns = canvas.width/fontSize;
 
 const rainDrops = [];
 
-for( let x = 0; x < columns; x++ ) {
+for(let x = 0; x < columns; x++ ) {
     rainDrops[x] = 1;
 }
 
@@ -27,7 +24,7 @@ const draw = () => {
 
     for(let i = 0; i < rainDrops.length; i++)
     {
-        const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+        const text = alphaNum.charAt(Math.floor(Math.random() * alphaNum.length));
         context.fillText(text, i * fontSize, rainDrops[i] * fontSize);
 
         if(rainDrops[i] * fontSize > canvas.height && Math.random() > 0.9){
