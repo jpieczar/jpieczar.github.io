@@ -5,8 +5,8 @@ var parent = document.getElementById("matrix");
 canvas.width = parent.offsetWidth;
 canvas.height = parent.offsetHeight;
 
-const alphaNum = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~`!@#$%^&*()-_=+?{}[];:,<.>";
-const fontSize = 16;
+const alphaNum = "aąbcćdeęfghijklłmnńoópqrsśtuvwxyzżźAĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŻŹ0123456789~`!@#€$%^&*()-_=+?{}[];:,<.>";
+const fontSize = 30;
 const columns = canvas.width/fontSize;
 
 const rainDrops = [];
@@ -19,7 +19,7 @@ const draw = () => {
     context.fillStyle = 'rgba(0, 0, 0, 0.1)';
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    context.fillStyle = '#0F0';
+    context.fillStyle = '#0FA';
     context.font = fontSize + 'px monospace';
 
     for(let i = 0; i < rainDrops.length; i++)
@@ -34,4 +34,4 @@ const draw = () => {
     }
 };
 
-setInterval(draw, 55);
+setInterval(draw, 20);
